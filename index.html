@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="EnterfirstName">
+                <span class="error-message" id="firstNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="middleName">middleName</label>
+                <input type="text" id="middleName" name="middleName"placeholder="EntermiddleName">
+                <span class="error-message" id="middleNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName" name="LastName"placeholder="EnterLastName">
+                <span class="error-message" id="lastNameError"></span>
+            </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group">
+            <label for="FatherName">Father Name</label>
+            <input type="text" id="FatherName" name="FatherName"placeholder="EnterFatherName">
+            <span class="error-message" id="fatherNameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="MotherName">Mother Name</label>
+            <input type="text" id="MotherName" name="MotherName"placeholder="EnterMotherName">
+            <span class="error-message" id="motherNameError"></span>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber">
+                <span class="error-message" id="phoneNumberError"></span>
+            </div>
+        </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="EnterEmail">
+                <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="coursename">Course</label>
+            <input type="text" id="Course" name="Course"placeholder="EnterCourse">
+            <span class="error-message" id="courseError"></span>
+        </div>
+        <div class="form-group">
+            <label for="Specialization">Specialization</label>
+            <input type="text" id="Specialization" name="Specialization"placeholder="EnterSpecialization">
+            <span class="error-message" id="specializationError"></span>
+        </div>
+        </div>
+        <div class="form-row">
+        <label for="gender">Gender:</label>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <span class="error-message" id="genderError"></span>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                    <label for="address">Present Address</label>
+                    <textarea id="address" name="address" class="large-address" rows="4"></textarea>
+                    <span class="error-message" id="addressError"></span>
+            </div>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to 100% of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.form-container {
+    width: 100%; /* Optional: control the width of the form container */
+    max-width: 1000px; /* Optional: max width to prevent form from being too wide */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Optional: background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align the children horizontally */
+    height: 100%; /* Take full height of parent container */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+   
+}
+h1{
+    text-align: center; /* cebter the heading text*/
+    margin-bottom: 20px; /*add some space bellow the haeding*/
+    font-size: 24px;
+}
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px; /* Add some space between fields in the same row */
+}
+.form-group:last-child {
+    margin-right: 0; /* Remove space from the last field in a row */
+}
+
+label {
+    margin-bottom: 5px;
+}
+input[type="text"],input[type="email"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+    width: 250px;/*Width of the text boxes*/
+    margin-right: 0;
+    box-sizing: border-box;
+}
+textarea {
+    padding: 12px; /* Increase padding for textarea */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make textarea take full width of its container */
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing only */
+}
+.large-address {
+    padding: 12px; /* Increase padding for the large address textarea */
+    font-size: 14px;
+    width: 100%; /* Make textarea take full width of its container */
+    height: 200px; /* Increase height specifically for the large address textarea */
+}
+button {
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #07fbbe;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #09eaff;
+}
+.form-row-multi {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    gap: 10px; /* Add space between fields */
+}
+
+.form-row-multi .form-group {
+    flex: 1; /* Each field takes up equal space */
+    margin-right: 0; /* Remove margin-right for fields in the same row */
+}
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+}
